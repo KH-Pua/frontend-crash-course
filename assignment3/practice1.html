@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
+    <title>Counter App</title>
+</head>
+<body>
+    <div class="container1">
+        <h1 class="display-5 container my-5 d-flex justify-content-evenly">Counter App</h1>
+        <div class="display-5 container my-5 d-flex justify-content-evenly">
+            <button class="btn btn-primary" onclick="addition()">+</button>
+            <p style="display:inline-block" id="number">0</p>
+            <button class="btn btn-primary" onclick="subtraction()">-</button>
+        </div>
+        <button class="container my-5 d-flex justify-content-evenly btn btn-primary" onclick="reset()">Reset</button>
+    </div>
+    <br>
+    <div class="container2">
+        <div id="input_row">
+            <h1 class="display-5 container my-5 d-flex justify-content-evenly">Todo App</h1>
+            <div class="container my-5 d-flex justify-content-center">
+                <input type="text" name="todo_item" id="todo_item">
+                <button class="btn btn-primary" onclick="add_todo()">+</button>
+            </div>
+        </div>
+        <div class="container my-5 d-flex justify-content-center" id="display_row">
+            <ul id="list"></ul>
+        </div>
+        <div class="container my-5 d-flex justify-content-center" id="info_row">
+            <p class="align-self-center" style="display: inline-block" id="pending_task">You have 0 pending task.</p>
+            <button class="btn btn-primary" onclick="clear_function()">Clear All</button>
+        </div>
+
+    </div>
+    <script src="./practice1.js"></script>
+</body>
+</html>
