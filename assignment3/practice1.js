@@ -79,6 +79,11 @@ function clear_function(){
     todo_list = document.querySelector("#list");
     todo_list.remove();
 
+    place_back = document.createElement("div");
+    place_back.setAttribute("id", "list");
+    place_back_location = document.querySelector("#todo_list");
+    place_back_location.appendChild(place_back);
+
     const announce_num = document.querySelector("#pending_task");
     announce_num.textContent = `You have 0 pending task.`;
 }

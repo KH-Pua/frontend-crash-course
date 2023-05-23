@@ -10,7 +10,7 @@
 </head>
 <body>
     <div class="container d-flex flex-column justify-content-around">
-        <h1 class="display-5 p-2 align-self-center my-5">Counter App</h1>
+        <h1 class="display-5 p-2 align-self-center mt-5 mb-2">Counter App</h1>
         <div class="p-2 align-self-center">
             <button class="btn btn-primary" onclick="addition()">+</button>
             <p style="display:inline-block" id="number">0</p>
@@ -23,13 +23,14 @@
     </div>
     <br>
     <div class="container px-5 d-flex flex-column justify-content-around">
-        <h1 class="display-5 p-2 align-self-center my-5">Todo App</h1>
+        <h1 class="display-5 p-2 align-self-center mt-5 mb-2">Todo App</h1>
         <div class="container d-flex flex-column justify-content-around">
             <div class="p-2 align-self-center">
                 <input type="text" name="todo_item" id="todo_item">
                 <button class="btn btn-primary" onclick="add_todo()">+</button>
             </div>
-            <div class="p-2 align-self-center" id="list">
+            <div class="p-2 align-self-center" id="todo_list">
+                <div id="list"></div>
             </div>
             <div class="p-2 align-self-center">
                 <p class="p-2 d-inline-flex" id="pending_task">You have 0 pending task.</p>
