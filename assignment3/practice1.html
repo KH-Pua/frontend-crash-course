@@ -9,31 +9,35 @@
     <title>Counter App</title>
 </head>
 <body>
-    <div class="container1">
-        <h1 class="display-5 container my-5 d-flex justify-content-evenly">Counter App</h1>
-        <div class="display-5 container my-5 d-flex justify-content-evenly">
+    <div class="container d-flex flex-column justify-content-around">
+        <h1 class="display-5 p-2 align-self-center my-5">Counter App</h1>
+        <div class="p-2 align-self-center">
             <button class="btn btn-primary" onclick="addition()">+</button>
             <p style="display:inline-block" id="number">0</p>
             <button class="btn btn-primary" onclick="subtraction()">-</button>
         </div>
-        <button class="container my-5 d-flex justify-content-evenly btn btn-primary" onclick="reset()">Reset</button>
+        <div class="p-2 align-self-center">
+            <button class="p-2 btn btn-primary px-4" onclick="reset()">Reset</button>
+        </div>
+        
     </div>
     <br>
-    <div class="container2">
-        <div id="input_row">
-            <h1 class="display-5 container my-5 d-flex justify-content-evenly">Todo App</h1>
-            <div class="container my-5 d-flex justify-content-center">
+    <div class="container px-5 d-flex flex-column justify-content-around">
+        <h1 class="display-5 p-2 align-self-center my-5">Todo App</h1>
+        <div class="container d-flex flex-column justify-content-around">
+            <div class="p-2 align-self-center">
                 <input type="text" name="todo_item" id="todo_item">
                 <button class="btn btn-primary" onclick="add_todo()">+</button>
             </div>
+            <div class="p-2 align-self-center" id="list">
+            </div>
+            <div class="p-2 align-self-center">
+                <p class="p-2 d-inline-flex" id="pending_task">You have 0 pending task.</p>
+                <button class="btn btn-primary p-2 align-self-center" onclick="clear_function()">Clear All</button>
+            </div>
         </div>
-        <div class="container my-5 d-flex justify-content-center" id="display_row">
-            <ul id="list"></ul>
-        </div>
-        <div class="container my-5 d-flex justify-content-center" id="info_row">
-            <p class="align-self-center" style="display: inline-block" id="pending_task">You have 0 pending task.</p>
-            <button class="btn btn-primary" onclick="clear_function()">Clear All</button>
-        </div>
+        
+        
 
     </div>
     <script src="./practice1.js"></script>

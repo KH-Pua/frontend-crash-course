@@ -39,21 +39,22 @@ function add_todo(){
 
 function append_list(){
     // Create delete button
-    const new_button = document.createElement("button")
-    new_button.setAttribute("onclick", "delete_function(this.id)")
+    const new_button = document.createElement("button");
+    new_button.setAttribute("onclick", "delete_function(this.id)");
+    new_button.setAttribute("class", "btn btn-primary");
     new_button.textContent = "Delete";
 
-    // Create list item
-    const new_line = document.createElement("li");
+    // Create p item
+    const new_line = document.createElement("p");
 
-    // Append to ul tag
+    // Append p to div tag
     const todo_text = document.querySelector("#todo_item");
     if (todo_text.value !== ""){
         new_line.textContent = todo_text.value;
         new_button.setAttribute("id", `${todo_text.value}`);
         new_line.appendChild(new_button);
-        const ul_tag = document.querySelector("#list");
-        ul_tag.appendChild(new_line);
+        const div_tag = document.querySelector("#list");
+        div_tag.appendChild(new_line);
     } 
 
     // Cleanup txtbox value

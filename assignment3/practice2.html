@@ -9,19 +9,18 @@
     <title>Practice2</title>
 </head>
 <body>
-    <div>
-        <h1>Activity Generator</h1>
-        <p id="activity_suggest"></p>
-        <button onclick="activity_api()">Click to generate activity</button>
+    <div class="container py-2 d-flex flex-column justify-content-around">
+        <h1 class="display-5 p-2 align-self-center my-5">Activity Generator</h1>
+        <p class="p-2 align-self-center" id="activity_suggest"></p>
+        <button class=" btn btn-primary p-2 align-self-center" onclick="activity_api()">Click to generate activity</button>
     </div>
-    <br>
-    <div>
-        <h1>Age Guesser</h1>
-        <p>Key in a person's name and let the computer to guess his/hers age.</p>
-        <input type="text" name="input" id="input">
-        <button onclick="post_to_api()">Submit</button>
+    <div class="container py-2 d-flex flex-column justify-content-around">
+        <h1 class="display-5 p-2 align-self-center mt-5 mb-2">Age Guesser</h1>
+        <p class="p-2 align-self-center">Key in a person's name and let the computer to guess his/hers age.</p>
+        <input class="mt-2 mb-4 align-self-center d-inline-flex" type="text" name="input" id="input">
+        <button class=" btn btn-primary p-2 align-self-center" onclick="post_to_api()">Submit</button>
         <br>
-        <p id="display_age"></p>
+        <p class="p-2 align-self-center" id="display_age"></p>
         <script src="./practice2.js"></script>
     </div>
 
