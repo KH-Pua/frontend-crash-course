@@ -1,0 +1,53 @@
+*{
+    box-sizing: border-box;
+}
+
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+}
+
+.number-guesser{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 60vw;
+    height: 60vh;
+    background-color: lightgrey;
+    border-radius: 8px;
+}
+
+h3{
+    margin: 40px;
+}
+
+.guess-number-box{
+    width: 20vw;
+    height: 40px;
+    border: 1px solid lightgrey;
+    border-radius: 8px;
+    margin: 30px;
+    text-align: center;
+}
+
+.button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.submit-button, .reset-button{
+    width: 80px;
+    height: 40px;
+    border: 1px solid lightgrey;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+
+
