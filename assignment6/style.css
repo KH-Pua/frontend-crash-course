@@ -1,0 +1,295 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    background-color: #121212;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.sidebar {
+    position: fixed;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    width: 196px;
+    background-color: #000000;
+    padding: 24px;
+}
+
+.logo{
+    display: flex;
+    align-items: center;
+}
+
+.sidebar .logo .fa-brands{
+    font-size: 40px;
+    color: #ffffff;
+}
+
+.sidebar .logo h3{
+    padding: 5px;
+    font-size: 26px;
+    color: #ffffff;
+}
+
+.sidebar .navigation ul{
+    list-style: none;
+    margin-top: 20px;
+}
+
+.sidebar .navigation ul li{
+    padding: 10px 0px;
+}
+
+.sidebar .navigation ul li a{
+    color: #b3b3b3;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 13px;
+}
+
+.sidebar .navigation ul li a:hover,
+.sidebar .navigation ul li a:active,
+.sidebar .navigation ul li a:focus {
+    color: #ffffff;
+}
+
+/* "a:hover .fa" means when mouse is hover on "a", what condition will be ".fa". */
+.sidebar .navigation ul li a:hover .fa,
+.sidebar .navigation ul li a:active .fa,
+.sidebar .navigation ul li a:focus .fa {
+    color: #b3b3b3;
+}
+
+.sidebar .navigation ul li .fa{
+    font-size: 20px;
+    margin-right: 10px;
+}
+
+.sidebar .navigation ul li a:hover .fa:hover,
+.sidebar .navigation ul li a:hover .fa:active,
+.sidebar .navigation ul li a:hover .fa:focus{
+    color: #ffffff;
+}
+
+.sidebar .policies{
+    position: absolute;
+    bottom: 100px;
+}
+
+.sidebar .policies ul{
+    list-style: none; 
+}
+
+.sidebar .policies ul li{
+    padding-bottom: 5px;
+}
+
+.sidebar .policies ul li a{
+    color: #b3b3b3;
+    font-weight: 500;
+    text-decoration: none;
+    font-size: 10px;
+}
+
+.sidebar .policies ul li a:hover,
+.sidebar .policies ul li a:active,
+.sidebar .policies ul li a:focus{
+    text-decoration: underline;
+}
+
+.main-container{
+    margin-left: 195px;
+    margin-bottom: 100px;
+}
+
+.topbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #101010;
+    padding: 14px 30px;
+}
+
+.topbar .prev-next-buttons button{
+    color: #7a7a7a;
+    cursor: not-allowed;
+    width: 34px;
+    height: 34px;
+    border-radius: 100%;
+    font-size: 18px;
+    border: 0;
+    background-color: #090909;
+    margin-right: 10px;
+}
+
+.topbar .navbar {
+    display: flex;
+    align-items: center;
+}
+
+.topbar .navbar ul{
+    list-style: none;
+}
+
+.topbar .navbar ul li{
+    display: inline-block;
+    margin: 0px 8px;
+    width: auto;
+}
+
+.topbar .navbar ul li a{
+    color: #b3b3b3;
+    font-weight: bold;
+    font-size: 14px;
+    letter-spacing: 1px;
+    text-decoration: none;
+}
+
+.topbar .navbar ul li a:hover,
+.topbar .navbar ul li a:active,
+.topbar .navbar ul li a:focus{
+    color: #ffffff;
+    font-size: 15px;
+}
+
+.topbar .navbar ul li.divider{
+    color: #ffffff;
+    font-size: 26px;
+    margin: 0px 20px;
+    width: auto;
+}
+
+.topbar .navbar button{
+    background-color: #ffffff;
+    color: #000000;
+    font-size: 16px;
+    font-weight: bold;
+    padding: 14px 30px;
+    border: 0px;
+    border-radius: 40px;
+    cursor: pointer;
+    margin-left: 20px;
+}
+
+.topbar .navbar button:hover,
+.topbar .navbar button:active,
+.topbar .navbar button:focus{
+    background: #f2f2f2;
+}
+
+.spotify-playlists{
+    padding: 20px 40px;
+}
+
+.spotify-playlists .playlistRow {
+    margin-bottom: 40px;
+}
+
+.spotify-playlists .playlistRow h2{
+    color: #ffffff;
+    font-size: 22px;
+    margin-bottom: 20px;
+}
+
+.spotify-playlists .playlistRow .cardRow{
+    display: flex;
+    gap: 20px;
+    overflow: hidden;
+    
+}
+ 
+.spotify-playlists .playlistRow .cardRow .card{
+    min-width: 140px;
+    width: 160px;
+    background-color: #181818;
+    border-radius: 6;
+    padding: 15px;
+    cursor: pointer;
+    transition: all ease 0.4s;
+    text-decoration: none;
+}
+
+.spotify-playlists .playlistRow .cardRow .card img{
+    width: 100%;
+    border-radius: 6px;
+    margin-bottom: 10px;
+}
+
+.spotify-playlists .playlistRow .cardRow .card .play{
+    position: relative;
+}
+
+.spotify-playlists .playlistRow .cardRow .card .play .fa{
+    position: absolute;
+    right: 10px;
+    top: -60px;
+    padding: 18px;
+    background-color: #1db954;
+    border-radius: 100%;
+    opacity: 0;
+    transition: all ease 0.4s;
+}
+
+.spotify-playlists .playlistRow .cardRow .card:hover .play .fa{
+    opacity: 1;
+    transform: translate(-20px);
+}
+
+.spotify-playlists .playlistRow .cardRow .card h4{
+    color:#ffffff;
+    font-size: 14px;
+    margin-bottom : 10px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    text-decoration: none;
+}
+
+.spotify-playlists .playlistRow .cardRow .card p{
+    color: #989898;
+    font-size: 12px;
+    line-height: 20px;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+.preview{
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: linear-gradient(to right, #ae2896, #509bf5);
+    padding: 15px 40px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.preview h6{
+    color: #ffffff;
+    text-transform: uppercase;
+    font-weight: 400;
+    font-size: 12px;
+    margin-bottom: 10px;
+}
+
+.preview p{
+    color: #ffffff;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.preview button{
+    background-color: #ffffff;
+    color: #000000;
+    font-size: 16px;
+    font-weight: bold;
+    padding: 14px 30px;
+    border: 0px;
+    border-radius: 40px;
+    cursor: pointer;
+}
+
